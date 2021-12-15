@@ -1,5 +1,7 @@
 import React from 'react'
 import '../Play.css';
+import CallApi from './CallApi.js'
+
 
 export default function Play() {
     return (
@@ -10,6 +12,9 @@ export default function Play() {
             <h1>Hangman Game</h1>
             </div>
             <div>
+            <div>
+            <CallApi />
+            </div>
             <label for="name">Trouvez le mot sans mourir ! Vous Avez X vie encore</label>
             <br/>
             <input type="text" id="name" name="name" required

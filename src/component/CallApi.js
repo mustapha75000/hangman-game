@@ -32,7 +32,7 @@ const getWord = async () => {
 };
 
 if(!word){
-    return <p>Waiting...</p>
+    return <p>Patientez...</p>
 }
 
 return (

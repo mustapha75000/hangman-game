@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes , Route, Link } from 'react-router-dom';
 import './App.css';
 import './Button.css';
 import './index.js';
@@ -7,10 +7,10 @@ import Play from './component/Play.js'
 
 const App = () => (
     <div className="App">
-          <Routes>
-            <Route exact path="/" element={<Home/>} />
-            <Route exact path="/Play" element={<Play/>} />
-          </Routes>
+          <Router>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/Play" element={<Play />} />
+          </Router>
     </div>
   )
 

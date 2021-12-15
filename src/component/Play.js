@@ -1,6 +1,8 @@
+import { keyboard } from '@testing-library/user-event/dist/keyboard';
 import React from 'react'
 import '../Play.css';
 import CallApi from './CallApi.js'
+import Keyboard from './keyboard/Keybord';
 
 
 export default function Play() {
@@ -12,13 +14,12 @@ export default function Play() {
             <h1>Hangman Game</h1>
             </div>
             <div>
+            <label for="name">Trouvez le nom de l'animal sans perdre de coeurs ! Vous encore X coeurs</label>
+            <br/>
             <div>
             <CallApi />
+            <Keyboard />
             </div>
-            <label for="name">Trouvez le mot sans mourir ! Vous Avez X vie encore</label>
-            <br/>
-            <input type="text" id="name" name="name" required
-                minlength="4" maxlength="8" size="50"></input>
             </div>
         </header>
       </div>

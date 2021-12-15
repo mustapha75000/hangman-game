@@ -1,9 +1,9 @@
 import React from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import '../Home.css';
-import '../Button.css';
-import Button from './Button.js';
 import Play from './Play.js';
+import Classement from './Classement.js'
+
 
 function Home() {
 
@@ -15,8 +15,15 @@ function Home() {
       <header className="Home-header">
         <img src='./images/logo.png' className="Home-logo" alt="logo" />
         <h1>Hangman Game</h1>
+        <label for="Nickname">Pseudo</label>
+        <input type="text" id="name" name="name" required
+         minlength="1" maxlength="10" size="30"></input>
+        <br/>
         <button type="button" className="btn-home" onClick={play}
         > Play !</button>
+        <div>
+        <Classement />  
+        </div>
       </header>
     </div>
   );

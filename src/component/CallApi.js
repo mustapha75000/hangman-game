@@ -31,10 +31,6 @@ const getWord = async () => {
     return await dataJson.json();
 };
 
-const getUser = async () => {
-    const dataJson = await fetch('https://animalfinderapi.herokuapp.com/user:id');
-    return await dataJson.json();
-};
 
 if(!word){
     return <p>Patientez...</p>

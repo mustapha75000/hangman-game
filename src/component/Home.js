@@ -1,7 +1,6 @@
 import React from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../Home.css';
-import Play from './Play.js';
 import Classement from './Classement.js'
 
 

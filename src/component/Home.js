@@ -17,9 +17,6 @@ function Home() {
         <h1>Hangman Game</h1>
         <button type="button" className="btn-home" onClick={play}
         > Play !</button>
-        <section>
-        <p>SCORE DES JOUEURS :</p>
-        </section>
       </header>
     </div>
   );

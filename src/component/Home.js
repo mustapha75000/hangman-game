@@ -22,8 +22,5 @@ function Home() {
   );
 }
 
-function onClick() {
-
-}
 
 export default Home;

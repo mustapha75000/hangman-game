@@ -1,32 +1,17 @@
-import logo from './logo.png';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import './Button.css';
-import Button from './Button.js';
-import Play from './Play.js';
+import './index.js';
+import Home from './component/Home.js'
+import Play from './component/Play.js'
 
-function App() {
-
-  const handleClick = () => {
-    console.log(handleClick);
-  };
-
-  return (
+const App = () => (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hangman Game</h1>
-        <Button value={"Jouer"} onClick={handleClick} />
-        <section>
-        <p>SCORE DES JOUEURS :</p>
-        </section>
-      </header>
-      
+          <Routes>
+            <Route exact path="/" element={<Home/>} />
+            <Route exact path="/Play" element={<Play/>} />
+          </Routes>
     </div>
-  );
-}
-
-function click() {
-  console.log("test");
-}
+  )
 
 export default App;
